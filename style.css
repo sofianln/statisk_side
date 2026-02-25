@@ -54,16 +54,25 @@ nav a {
   padding: 2rem;
   border-radius: 6px;
   text-align: center;
+  display: block;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .kategorier-grid a:hover {
   background: #ed8cae;
+  transform: translateY(-3px);
 }
 
 .produkt-grid {
   display: grid;
   gap: 2rem;
   padding: 2rem;
+}
+.produkt-grid a:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
 }
 
 .produkt-kort,
@@ -158,7 +167,7 @@ nav a {
   }
 
   .produkt-detaljer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     align-items: start;
   }
 }
